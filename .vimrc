@@ -4,6 +4,7 @@ set numberwidth=3
 
 set expandtab
 set tabstop=2
+set shiftwidth=2
 set softtabstop=2
 set guifont=Monospace:h20
 
@@ -33,7 +34,9 @@ Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-haml'
 Plugin 'preservim/nerdtree'
+Plugin 'pangloss/vim-javascript'
 Bundle 'vim-ruby/vim-ruby'
+
 
 call vundle#end()           " required
 filetype plugin indent on   "required
@@ -68,6 +71,8 @@ let g:lightline = {
       \   'filename': 'LightlineFilename',
       \ },
       \ }
+
+let NERDTreeShowHidden=1
 
 if $TERM_PROGRAM =~ "iTerm"
     let &t_SI = "\<Esc>]50;CursorShape=1\x7" " Vertical bar in insert mode
